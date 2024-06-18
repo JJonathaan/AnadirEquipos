@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1</title>
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Ejemplo 6B  Manejo de Arrays </h1>
+        
+        <h3>Que hace el ejemplo</h3>
+        <p>
+           Vamos a crear un script que nos permita introducir el nombre de un alumno y seleccionar el grupo al que pertenecera.
+           Monstrara los resultafos en un lista dentro de su div correspondiente al que pertenezca.
+        </p>
+
+        <h3>¿Cómo lo hemos hecho?</h3>
+        <p>Se utilizan tres arrars vacio (valoresGrupo1,valoresGrupo2,valoresGrupo3) para almacenar los valores introducidos segun el grupo 
+            seleccionado. Se añade un evento 'Click' al boton, que toma el valor del campo de entrada,
+            lo añade al array correspondiente según el grupo seleccionada y luego las listas.
+
+        </p>
+    
+        <div class="resultado">
+            <p style="text-align: center;">
+                Estos son los resultados
+               <form action="#" method="post" id="myformulario">
+                <input type="text" name="nombre" id="nombreAlumno" placeholder="Introduce el nombre ">
+                <select name="grupo" id="grupos">
+                    <option value="opcion1">Grupo A</option>
+                    <option value="opcion2">Grupo B</option>
+                    <option value="opcion3">Grupo C</option>
+
+                </select>
+               </form>
+            <div class="flex-container" id="borrarTodo">
+                <ul id="grupo1opcion1">Grupo A</ul>
+                <ul id="grupo2opcion2">Grupo B</ul>
+                <ul id="grupo3opcion3">Grupo C</ul>
+            </div>
+            <p id="numerosde"></p>
+            </p>
+        </div>
+        <div id="formaBoton2">
+        <button class="botonAñadir" id="botonElegir">Añadir grupo</button>
+        </div>
+        <div id="formaBoton">
+            <button  id="botonElegir" class="botonResetear">Resetear</button>
+            </div>
+        
+    </div>
+ 
+</body>
+<script src="Scripts/modi4.js"></script>
+</html>
